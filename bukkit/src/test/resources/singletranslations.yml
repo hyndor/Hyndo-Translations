@@ -1,0 +1,6 @@
+firstTranslation:
+  translation: "Первый перевод"
+secondTranslation:
+  translation: "Второй перевод"
+argsTranslation:
+  translation: "Тут типо {0} а там типо хер {1}"
