@@ -29,7 +29,11 @@ public class BukkitTranslation implements Translation {
 
     @Override
     public String get(Locale locale, String... args) {
-        return locales.get(locale).format(args);
+        MessageFormat messageFormat = locales.get(locale);
+        if(messageFormat != null) {
+            return messageFormat.format(args);
+        }
+        return id;
     }
 
     @Override
